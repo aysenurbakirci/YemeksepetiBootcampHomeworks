@@ -13,7 +13,7 @@ func Palidrome(number: Int) -> Int{
     }
     return Int(sayi) ?? 0
 }
-func ProblemFive() -> Int{
+func ProblemFour() -> Int{
     for numberOne in stride(from: 999, to: 100, by: -1){
         for numberTwo in stride(from: 999, to: 100, by: -1){
             let result = numberOne * numberTwo
@@ -25,4 +25,4 @@ func ProblemFive() -> Int{
     return 0
 }
 
-print("Problem 5 Result: \(ProblemFive())")
+print("Problem 5 Result: \(ProblemFour())")
