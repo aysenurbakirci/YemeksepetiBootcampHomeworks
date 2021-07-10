@@ -19,7 +19,7 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        userAddress.numberOfLines = 5
         checkLocationServices()
     }
     
@@ -40,7 +40,7 @@ class MapViewController: UIViewController {
             setupLocationManager()
             checkLocationAuthorization()
         } else {
-            //TODO: Kullanıcıya ayarlardan konum servisini açması istenebilir
+            print("konum alınamıyor")
         }
     }
     
@@ -106,16 +106,14 @@ extension MapViewController: MKMapViewDelegate {
             
             guard let placemark = placemarks?.first else { return }
             
-            let city = placemark.locality ?? "City"
-            let street = placemark.thoroughfare ?? "Street"
-//            let administrativeArea = placemark.administrativeArea ?? ""
-//            let country = placemark.country ?? ""
-//            let inlandWater = placemark.inlandWater ?? ""
-//            let isoCountryCode = placemark.isoCountryCode ?? ""
-//            let name = placemark.name ?? ""
-//            let postalCode = placemark.postalCode ?? ""
+            let subThoroughfare = placemark.subThoroughfare ?? ""
+            let street = placemark.thoroughfare ?? ""
+            let subLocality = placemark.subLocality ?? ""
+            let city = placemark.locality ?? ""
+            let administrativeArea = placemark.administrativeArea ?? ""
+            let country = placemark.country ?? ""
             
-            self.userAddress.text = "\(city) - \(street)"
+            self.userAddress.text = "\(subThoroughfare) - \(street) - \(subLocality) - \(city) - \(administrativeArea) - \(country)"
         }
     }
     

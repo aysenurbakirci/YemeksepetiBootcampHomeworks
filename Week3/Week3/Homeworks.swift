@@ -18,4 +18,7 @@ import Foundation
   *viewWillDissapear: Bu method görünüm, görünüm hiyerarşisinden kaldırılmadan hemen önce çağırılır.Zamanlayıcı işlemleri, ağ isteklerinin iptali, arayüzdeki değişikliklerin geri alınması gibi işlemlerde kullanılabilir.
   *viewDidDissapear: Bu method görünüm görünüm hiyerarşisinden kaldırıldıktan sonra çağırılır. Cihaz sensörlerini dinlemeyi durdurmak için kullanılabilir.
  
+ 3 -> optional? = 48 ataması neden yapılamıyor?
+ 4 -> protocol sorusunda fonksiyon neden override edilemiyor?
+ 
  */
