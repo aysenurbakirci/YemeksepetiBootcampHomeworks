@@ -20,11 +20,6 @@
 		2433560B2696FFDA0044679C /* Homeworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2433560A2696FFDA0044679C /* Homeworks.swift */; };
 		243356122697129E0044679C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243356112697129E0044679C /* PageViewController.swift */; };
 		24B320DD26977A1900959728 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B320DC26977A1900959728 /* MapViewController.swift */; };
-		24B320E42698853D00959728 /* SearchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B320E32698853D00959728 /* SearchPageViewController.swift */; };
-		24B320E62698855300959728 /* EmptyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B320E52698855300959728 /* EmptyListViewController.swift */; };
-		24B321322699698F00959728 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B321312699698F00959728 /* MealModel.swift */; };
-		24B3213426996AD700959728 /* MealListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3213326996AD700959728 /* MealListViewController.swift */; };
-		24B3213626996AE900959728 /* CreateMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3213526996AE900959728 /* CreateMealViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,11 +59,6 @@
 		2433560A2696FFDA0044679C /* Homeworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeworks.swift; sourceTree = "<group>"; };
 		243356112697129E0044679C /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		24B320DC26977A1900959728 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		24B320E32698853D00959728 /* SearchPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageViewController.swift; sourceTree = "<group>"; };
-		24B320E52698855300959728 /* EmptyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListViewController.swift; sourceTree = "<group>"; };
-		24B321312699698F00959728 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
-		24B3213326996AD700959728 /* MealListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListViewController.swift; sourceTree = "<group>"; };
-		24B3213526996AE900959728 /* CreateMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMealViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +113,6 @@
 				2433560C26970CD10044679C /* PageController */,
 				243356052696E2C80044679C /* NotificationSender */,
 				24B320DB269779F600959728 /* Map */,
-				24B321302699697300959728 /* MealList */,
-				24B320DE26981CD300959728 /* CustomEmptyView */,
 				243355FD269620AE0044679C /* Delegates */,
 				243355D0269620950044679C /* Main.storyboard */,
 				243355D6269620960044679C /* Assets.xcassets */,
@@ -185,25 +173,6 @@
 				24B320DC26977A1900959728 /* MapViewController.swift */,
 			);
 			path = Map;
-			sourceTree = "<group>";
-		};
-		24B320DE26981CD300959728 /* CustomEmptyView */ = {
-			isa = PBXGroup;
-			children = (
-				24B320E32698853D00959728 /* SearchPageViewController.swift */,
-				24B320E52698855300959728 /* EmptyListViewController.swift */,
-			);
-			path = CustomEmptyView;
-			sourceTree = "<group>";
-		};
-		24B321302699697300959728 /* MealList */ = {
-			isa = PBXGroup;
-			children = (
-				24B321312699698F00959728 /* MealModel.swift */,
-				24B3213326996AD700959728 /* MealListViewController.swift */,
-				24B3213526996AE900959728 /* CreateMealViewController.swift */,
-			);
-			path = MealList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,18 +306,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				243356072696E3030044679C /* NotificationSenderViewController.swift in Sources */,
-				24B3213426996AD700959728 /* MealListViewController.swift in Sources */,
 				243356122697129E0044679C /* PageViewController.swift in Sources */,
-				24B320E62698855300959728 /* EmptyListViewController.swift in Sources */,
-				24B321322699698F00959728 /* MealModel.swift in Sources */,
 				243355D5269620950044679C /* Week3.xcdatamodeld in Sources */,
 				243355CB269620950044679C /* AppDelegate.swift in Sources */,
 				24B320DD26977A1900959728 /* MapViewController.swift in Sources */,
-				24B320E42698853D00959728 /* SearchPageViewController.swift in Sources */,
 				2433560B2696FFDA0044679C /* Homeworks.swift in Sources */,
 				243356092696E3240044679C /* NotificationListenerViewController.swift in Sources */,
 				243355CD269620950044679C /* SceneDelegate.swift in Sources */,
-				24B3213626996AE900959728 /* CreateMealViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
