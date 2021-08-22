@@ -22,7 +22,9 @@ FoodPool is an application that allows users to order food easily.
 This application's database operations had designed with Firebase Firestore, Firebase Storage and Firebase Authentication.<br/>
 SDWebImage and FontAwesome was used as a 3rd Party library.<br/>
 The project is modeled in accordance with the MVVM structure.<br/>
-Unit test coded all pages of the application.
+Unit test coded all ViewModels of the application.<br/>
+<br/>
+<b>Important Note: <b/> You may need to add the font files in the FontAwesome folder to the project for open the application.
 
 ## :sparkles: Main Features
 
